@@ -1,15 +1,39 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.Scanner;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+public class Main{
+    public static void main (String [] agrs){
+        Scanner scanner = new Scanner(System.in);
+
+        String name;
+        int birth;
+        String jenisKelamin;
+
+        System.out.print("Masukan nama anda: ");
+        name = scanner.nextLine();
+        System.out.print("Masukkan Jenis Kelamin (L/P): ");
+        String gender = scanner.next().toUpperCase(); // Mengubah inputan menjadi huruf besar
+
+        // Menentukan jenis kelamin
+        if (gender.equals("L")) {
+            jenisKelamin = "Laki-laki";
+        } else if (gender.equals("P")) {
+            jenisKelamin = "Perempuan";
+        } else {
+            jenisKelamin = "Tidak diketahui";
         }
+        System.out.print("Masukan Tahun Lahir : ");
+        birth = scanner.nextInt();
+
+        // fungsi untuk menghitung usia
+        int tahunSekarang = 2025;
+        int usia = tahunSekarang - birth;
+
+        System.out.println("Data Diri :");
+        System.out.println("Nama : " + name);
+        System.out.println("Jenis Kelamin : " + jenisKelamin);
+        System.out.println("Tahun Lahir : " + birth);
+        System.out.println("Usia : " + usia);
+
+        scanner.close(); // Menutup scanner untuk menghindari kebocoran sumber daya
     }
 }
