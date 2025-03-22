@@ -9,8 +9,11 @@ public class Main {
         hewan1.jenis = "Mamalia";
         hewan2.jenis = "Reptil";
 
-        hewan1.suara = "Miaw..miaww miaw myawww\n";
+        hewan1.suara = "Miaw..miaww miaw myawww";
         hewan2.suara = "Totototo too Tokkekk";
+
+        hewan1.gerak = "Berjalan\n";
+        hewan2.gerak = "Merayap";
 
         hewan1.simsalabim();
         hewan2.simsalabim();

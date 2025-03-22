@@ -1,14 +1,11 @@
 import java.util.Scanner;
-
 class LoginSimpel {
     public static void main(String[] args) {
         Scanner inputan = new Scanner(System.in);
 
-        // mendeklarasikan variabel
-        String usernameValid = "Admin504";
-        String passwordValid = "Password504";
-        String namaValid = "Muhamad Raihan Naja";
-        long nimValid = 202410370110504L;
+        // membuat objek
+        Admin admin = new Admin();
+        Mahasiswa mhs = new Mahasiswa();
 
         //bagian memilih jenis login
         System.out.print("Pilih Login: \n1.Admin \n2.Mahasiswa\nMasukan Pilihan: ");
@@ -23,8 +20,8 @@ class LoginSimpel {
             String password = inputan.nextLine();
 
         // pengecekan kondisi pilihan 1
-            if (username.equals(usernameValid) && password.equals(passwordValid)){
-                System.out.println("Selamat Login Admin Berhasil");
+            if (admin.login(username, password)){
+                admin.displayInfo();
             }else {
                 System.out.println("Maaf '_' Login Gagal ! Username / Password salah");
             }
@@ -35,10 +32,8 @@ class LoginSimpel {
             long nim = inputan.nextLong();
             inputan.nextLine();
             // pengecekan kondisi pilihan 2
-            if (nama.equals(namaValid) && nim == nimValid){
-                System.out.println("Selamat Login Mahasiswa Berhasil");
-                System.out.println("Nama: " + nama);
-                System.out.println("NIM: " + nim);
+            if (mhs.login(nama ,nim)){
+                mhs.displayInfo(nama,nim);
             } else {
                 System.out.println("Maaf '_' Login Gagal ! Nama / Nim salah");
             }

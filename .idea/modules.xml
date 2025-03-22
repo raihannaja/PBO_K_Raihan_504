@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Codelab/Modul_2/Codelab_1/Codelab_1.iml" filepath="$PROJECT_DIR$/Codelab/Modul_2/Codelab_1/Codelab_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Codelab/Modul_2/Codelab_2/Codelab_2.iml" filepath="$PROJECT_DIR$/Codelab/Modul_2/Codelab_2/Codelab_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Codelab/Modul_1/Modul_1.iml" filepath="$PROJECT_DIR$/Codelab/Modul_1/Modul_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Codelab/Modul_3/Modul_3.iml" filepath="$PROJECT_DIR$/Codelab/Modul_3/Modul_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Codelab/Modul_4/Modul_4.iml" filepath="$PROJECT_DIR$/Codelab/Modul_4/Modul_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Codelab/Modul_5/Modul_5.iml" filepath="$PROJECT_DIR$/Codelab/Modul_5/Modul_5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PBO_K_Raihan_504.iml" filepath="$PROJECT_DIR$/.idea/PBO_K_Raihan_504.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tugas/Tugas.iml" filepath="$PROJECT_DIR$/Tugas/Tugas.iml" />
+    </modules>
+  </component>
+</project>

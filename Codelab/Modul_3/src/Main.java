@@ -1,15 +1,28 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner inputan = new Scanner(System.in); /* menambahkan fitur scanner agar dapat
+        menentukan poin kesehatan sesuka hati */
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        // Meminta input poin kesehatan untuk Pahlawan dan Musuh
+        System.out.print("Masukkan poin kesehatan untuk Super Dede: ");
+        int kesehatanSupde = inputan.nextInt();
+
+        System.out.print("Masukkan poin kesehatan untuk Bencong: ");
+        int kesehatanBoti = inputan.nextInt();
+
+        //membuat objek pahlawan dan musuh
+        Pahlawan superdede = new Pahlawan("Super Dede", kesehatanSupde);
+        Musuh boti = new Musuh("Bencong", kesehatanBoti);
+
+        // Menampilkan status awal kesehatan Pahlawan dan Musuh
+        System.out.println("\nStatus awal:");
+        System.out.println(superdede.getNama() + " memiliki kesehatan: " + superdede.getKesehatan());
+        System.out.println(boti.getNama() + " memiliki kesehatan: " + boti.getKesehatan());
+
+        // Menjalankan method serang untuk mensimulasikan pertarungan
+        superdede.serang(boti);
+        boti.serang(superdede);
     }
 }

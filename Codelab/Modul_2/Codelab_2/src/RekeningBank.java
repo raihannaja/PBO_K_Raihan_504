@@ -8,11 +8,11 @@ public class RekeningBank {
         System.out.println("Saldo: Rp" + saldo + "\n");
     }
 
-    void setorUang(){
+    void setorUang(double setoran){
         System.out.println((pemilik) + " Menyetor Rp:" + (setoran) + " Saldo Sekarang: Rp" + (saldo + setoran));
     }
 
-    void tarikUang() {
+    void tarikUang(double tarikan) {
         saldoPlus = saldo + setoran;
         if (tarikan > saldoPlus) {
             System.out.println(("\n") + pemilik + " Menarik Rp:" + (tarikan) + " (Gagal,Saldo tidak mencukupi) Saldo saat ini: Rp" + saldoPlus);

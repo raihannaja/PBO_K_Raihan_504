@@ -1,4 +1,4 @@
-public class Main_Bank {
+public class Main {
     public static void main(String[] args) {
         RekeningBank rek1 = new RekeningBank();
         RekeningBank rek2 = new RekeningBank();
@@ -20,12 +20,11 @@ public class Main_Bank {
 
         rek1.munculInfo();
         rek2.munculInfo();
-        rek1.setorUang();
-        rek2.setorUang();
-        rek1.tarikUang();
-        rek2.tarikUang();
+        rek1.setorUang(rek1.setoran);
+        rek2.setorUang(rek2.setoran);
+        rek1.tarikUang(rek1.tarikan);
+        rek2.tarikUang(rek2.setoran);
         rek1.infoUpdate();
         rek2.infoUpdate();
-
     }
 }
