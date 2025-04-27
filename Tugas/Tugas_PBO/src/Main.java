@@ -2,44 +2,26 @@ import java.util.Scanner;
 class LoginSimpel {
     public static void main(String[] args) {
         Scanner inputan = new Scanner(System.in);
-
         // membuat objek
-        Admin admin = new Admin();
-        Mahasiswa mhs = new Mahasiswa();
+        Admin admin = new Admin("Muran", "504", "Adm504", "Pass504");
+        Mahasiswa mhs = new Mahasiswa("Muran", "504");
 
-        //bagian memilih jenis login
-        System.out.print("Pilih Login: \n1.Admin \n2.Mahasiswa\nMasukan Pilihan: ");
-        int pilihan = inputan.nextInt();
-        inputan.nextLine();
-
-        //Login untuk admin
-        if (pilihan == 1) {
-            System.out.print("Masukan Username: ");
-            String username = inputan.nextLine();
-            System.out.print("Masukan Password: ");
-            String password = inputan.nextLine();
-
-        // pengecekan kondisi pilihan 1
-            if (admin.login(username, password)){
-                admin.displayInfo();
-            }else {
-                System.out.println("Maaf '_' Login Gagal ! Username / Password salah");
-            }
-        } else if (pilihan == 2) { //Login untuk mahasiswa
-            System.out.print("Masukan Nama: ");
-            String nama = inputan.nextLine();
-            System.out.print("Masukan Nim: ");
-            long nim = inputan.nextLong();
+        int pilihan;
+        do { // Perulangan untuk memilih jenis login
+            System.out.print("Pilih Login: \n1. Admin \n2. Mahasiswa \n3. Exit\nMasukan Pilihan: ");
+            pilihan = inputan.nextInt();
             inputan.nextLine();
-            // pengecekan kondisi pilihan 2
-            if (mhs.login(nama ,nim)){
-                mhs.displayInfo(nama,nim);
+
+            if (pilihan == 1){
+                admin.login();
+            } else if (pilihan == 2){
+                mhs.login();
+            } else if (pilihan == 3) { // Pilihan untuk keluar
+                System.out.println("Terima kasih! Anda telah keluar.");
             } else {
-                System.out.println("Maaf '_' Login Gagal ! Nama / Nim salah");
+                System.out.println("Pilihan Anda Tidak Valid !, Pilih 1 atau 2 !");
             }
-        }else {
-            System.out.println("Pilihan Anda Tidak Valid !");
-            }
+        } while (pilihan != 3); // Loop akan terus berjalan sampai pilihan 3
         inputan.close();
-        }
+    }
 }

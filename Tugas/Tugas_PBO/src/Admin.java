@@ -1,12 +1,33 @@
-public class Admin{
-    String usernameValid = "Admin504";
-    String passwordValid = "Password504";
+import java.util.Scanner;
+import java.awt.Toolkit;
 
-    boolean login(String username , String password ){
-        return username.equals(usernameValid) && password.equals(passwordValid);
+public class Admin extends User {
+    private String username;
+    private String password;
+    Scanner inputan = new Scanner(System.in);
+
+    public Admin(String nama, String nim, String username, String password) {
+        super(nama, nim);
+        this.username = username;
+        this.password = password;
     }
-    void displayInfo(){
-        System.out.println("Login Admin Berhasil!");
+
+    @Override
+    public void login() {
+        System.out.print("Masukkan Username: ");
+        String inputUser = inputan.nextLine();
+        System.out.print("Masukkan Password: ");
+        String inputPass = inputan.nextLine();
+        if (inputUser.equals(this.username) && inputPass.equals(this.password)) {
+            displayInfo();
+        } else {
+            System.out.println("Maaf '_' Login Admin Gagal ! Username / Password salah");
+        }
+    }
+
+    @Override
+    public void displayInfo() {
+        Toolkit.getDefaultToolkit().beep();
+        System.out.println("Selamat Login Admin Berhasil");
     }
 }
-
