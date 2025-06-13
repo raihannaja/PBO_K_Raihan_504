@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fb199da8-333a-43e1-a866-6f7b3c2d9a02" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/praktikum/main/LoginSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tugas_PBO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tugas_PBO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/praktikum/actions/AdminActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praktikum/actions/AdminActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/praktikum/actions/MahasiswaActions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/praktikum/main/LoginSistim.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/praktikum/users/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praktikum/users/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/praktikum/users/Mahasiswa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praktikum/users/Mahasiswa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/praktikum/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praktikum/users/User.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;raihannaja&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/raihannaja/PBO_K_Raihannaja_504.git&quot;,
+    &quot;accountId&quot;: &quot;a0613bd4-eb2a-45b6-ac81-f5ae48d94bb9&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2xx0reQEG8Whbpi44Sad1FQN9NH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Tayo.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/LENOVO/Downloads/openjfx-17.0.15_windows-x64_bin-sdk/javafx-sdk-17.0.15/lib/javafx.media.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Tayo" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.praktikum.gui.MainApp" />
+      <module name="Tugas_PBO" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\LENOVO\Downloads\openjfx-17.0.15_windows-x64_bin-sdk\javafx-sdk-17.0.15\lib&quot; --add-modules javafx.controls,javafx.fxml " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb199da8-333a-43e1-a866-6f7b3c2d9a02" name="Changes" comment="" />
+      <created>1748864616724</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748864616724</updated>
+    </task>
+    <servers />
+  </component>
+</project>
