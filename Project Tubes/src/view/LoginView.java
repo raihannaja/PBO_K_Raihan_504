@@ -37,6 +37,8 @@ public class LoginView {
                 primaryStage.setScene(MainMenuView.createMainMenuScene(primaryStage, user));
             } else {
                 loginError.setText("❌ Username atau password salah!");
+                loginUsername.clear(); 
+                loginPass.clear();
             }
         });
 

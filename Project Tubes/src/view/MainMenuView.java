@@ -18,7 +18,6 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class MainMenuView extends VBox {
     public static Scene createMainMenuScene(Stage primaryStage, User user) {
@@ -57,10 +56,7 @@ public class MainMenuView extends VBox {
         Tooltip.install(notifIcon, tooltip);
 
         notifIcon.setOnAction(e -> {
-            List<Task> pendingTasks = new TaskController().loadTasks()
-                    .stream()
-                    .filter(t -> !t.isDone())
-                    .collect(Collectors.toList());
+            List<Task> pendingTasks = new TaskController().getPendingTasks();
 
             if (pendingTasks.isEmpty()) {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);

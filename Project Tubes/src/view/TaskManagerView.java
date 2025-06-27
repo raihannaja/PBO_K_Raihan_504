@@ -184,7 +184,7 @@ public class TaskManagerView extends VBox {
                 updated[0] = true;
                 dialog.close();
             } catch (Exception ex) {
-                Alert alert = new Alert(Alert.AlertType.ERROR, "Pastikan semua data tanggal dan jam terisi dengan benar.");
+                Alert alert = new Alert(Alert.AlertType.ERROR, "Data tugas tidak valid. Pastikan semua kolom terisi dengan benar.");
                 alert.showAndWait();
             }
         });

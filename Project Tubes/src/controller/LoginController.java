@@ -8,8 +8,8 @@ public class LoginController {
 
     public static User signIn(String username, String password) {
         try {
-            if (username.equals("admin") && password.equals("admin")) {
-                return new User("admin", "admin");
+            if (username.equals("user") && password.equals("user")) {
+                return new User("Pengguna", "user");
             }
 
             int i = 0;

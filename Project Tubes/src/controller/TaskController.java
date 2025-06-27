@@ -3,9 +3,9 @@ package controller;
 import model.Task;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-
 import java.io.*;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class TaskController {
     private final File taskFile = new File("tasks.txt");
@@ -34,6 +34,12 @@ public class TaskController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public List<Task> getPendingTasks() {
+        return loadTasks().stream()
+                .filter(task -> !task.isDone())
+                .collect(Collectors.toList());
     }
 
     public void saveAllTasks(List<Task> tasks) {

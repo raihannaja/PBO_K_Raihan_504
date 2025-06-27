@@ -1,3 +1,6 @@
 Listening|Senin|08.40 - 10.20|R.208 GKB I
-Grammar|Senin|12.10 - 13.50|R.606 GKB IV
-Sistem Informasi|Rabu|15.15|R.208 GKB I
+Kewarganegaraan|Selasa|07.00 - 08.40|Aula BAU
+PBO|Selasa|13.00 - 14.40|R.611 GKB III
+Praktikum|Rabu|16.55 - 19.05|LAB C - D
+AIK 2|Kamis|13.50 - 14.40|407 - masjid
+Reading|Jum'at|08.40 - 10.20|Gazebo Perpus
