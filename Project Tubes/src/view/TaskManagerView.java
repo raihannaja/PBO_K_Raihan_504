@@ -180,7 +180,7 @@ public class TaskManagerView extends VBox {
                 task.setDeadline(deadline.format(formatter));
                 task.setDescription(descField.getText());
                 String status = sudahBtn.isSelected() ? "Sudah" : "Belum";
-                task.setDone(status);
+                task.setDone(sudahBtn.isSelected());
                 updated[0] = true;
                 dialog.close();
             } catch (Exception ex) {

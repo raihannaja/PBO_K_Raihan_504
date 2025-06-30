@@ -1,5 +1,6 @@
 package controller;
 
+import exception.RegistrationException;
 import model.User;
 import java.util.ArrayList;
 
@@ -30,20 +31,22 @@ public class LoginController {
     public static String signUp(String username, String password) {
         try {
             if (username.isEmpty() || password.isEmpty()) {
-                return "❌ Username dan Password tidak boleh kosong!";
+                throw new RegistrationException("❌ Username dan Password tidak boleh kosong!");
             }
 
             for (User user : users) {
                 if (user.getUsername().equals(username)) {
-                    return "⚠️ Username sudah terdaftar!";
+                    throw new RegistrationException("⚠️ Username sudah terdaftar!");
                 }
             }
 
             users.add(new User(username, password));
             return "✅ Berhasil daftar! Silakan login.";
+
+        } catch (RegistrationException e) {
+            return e.getMessage();  // Menampilkan pesan error ke View
         } catch (Throwable t) {
-            System.err.println("⚠️ Terjadi kesalahan saat proses pendaftaran: " + t.getMessage());
-            return "❌ Terjadi kesalahan tak terduga. Coba lagi.";
+            return "❌ Terjadi kesalahan tidak terduga: " + t.getMessage();
         }
     }
 }

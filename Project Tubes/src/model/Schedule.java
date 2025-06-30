@@ -15,7 +15,9 @@ public class Schedule implements Verifiable {
         this.ruangan = new SimpleStringProperty(ruangan);
     }
 
-    public String getMatkul() { return matkul.get(); }
+    public String getMatkul() {
+        return matkul.get();
+    }
     public void setMatkul(String value) { matkul.set(value); }
     public SimpleStringProperty matkulProperty() { return matkul; }
 

@@ -26,12 +26,7 @@ public class Task implements Verifiable {
     public void setDone(boolean done) {
         this.done = done;
     }
-
-    public void setDone(String status) {
-        this.done = status.equalsIgnoreCase("sudah");
-    }
-
-
+    
     public String getStatusText() {
         return done ? "Sudah" : "Belum";
     }

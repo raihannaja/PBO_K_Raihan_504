@@ -1,3 +1,4 @@
 Sisfor|06-06-2025 00:00|21-06-2025 23:59|Artikel|true
 Tubes|10-06-2025 14:00|01-07-2025 14:00|Project Aplikasi|false
 pancasila|20-06-2025 12:00|25-06-2025 23:00|Observasi|false
+Matematika|02-07-2025 12:00|10-07-2025 12:00|LMS|false
